@@ -33,6 +33,7 @@ db.serialize(() => {
       FOREIGN KEY (asset_id) REFERENCES assets (asset_id)
     )
   `);
+  // Create the Asset Allocation table
     console.log('Asset Allocation table created.');
     
     db.serialize(() => {
